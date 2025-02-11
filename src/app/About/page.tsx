@@ -14,14 +14,14 @@ export default function Page() {
       >
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            India's Beloved Bike Taxi Service
+            India&apos;s Beloved Bike Taxi Service
           </h1>
           <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-gray-700 mb-6">
             We are not an option, we are a choice
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            We're #1 choice of 10 Million people because we're the solution of
-            India's intra-city commuting problems. With assured safety, we also
+            We&apos;re #1 choice of 10 Million people because we&apos;re the solution of
+            India&apos;s intra-city commuting problems. With assured safety, we also
             provide economically priced rides.
           </p>
         </div>

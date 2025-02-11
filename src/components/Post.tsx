@@ -1,6 +1,5 @@
-import { Post as PostType } from "@/lib/types";
 import { fetchPosts } from "@/lib/api";
-import PostList from "./Post-list"
+import PostList from "./Post-list";
 import { PaginationWithLinks } from "./ui/pagination-with-links";
 
 interface PostProps {

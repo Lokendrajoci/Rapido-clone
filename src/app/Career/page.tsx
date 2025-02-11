@@ -28,7 +28,7 @@ function Page() {
         </h1>
         <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
           We are so glad you want to join us in exploring a world of endless
-          opportunities at Rapido. Let's find a spot for you.
+          opportunities at Rapido. Let&apos;s find a spot for you.
         </p>
         <button className="bg-yellow-400 rounded-full px-6 py-3 text-sm md:text-base font-semibold hover:bg-yellow-500 transition-colors">
           View Jobs

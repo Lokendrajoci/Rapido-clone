@@ -5,7 +5,7 @@ import Image from "next/image";
 function ContactCard() {
   return (
     <div className="container mx-auto px-4 space-y-8 md:space-y-12 lg:space-y-16">
-      {/* Safety Overview Card */}
+   
       <Card className="w-full border-none shadow-none">
         <CardContent className="p-2 sm:p-4">
           <div className="relative w-full h-48 sm:h-64 md:h-96">
@@ -23,7 +23,7 @@ function ContactCard() {
         </CardContent>
       </Card>
 
-      {/* Coverage Card */}
+  
       <Card className="w-full border-none shadow-none">
         <CardHeader className="text-center sm:text-left p-4 sm:p-6">
           <CardTitle className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-bold">
@@ -58,7 +58,7 @@ function ContactCard() {
         </CardContent>
       </Card>
 
-      {/* Safety Features Section */}
+      
       <div className="w-full">
         <div className="relative w-full h-[400px] sm:h-[500px] md:h-[600px] lg:h-[800px] max-w-4xl mx-auto">
           <Image
@@ -73,7 +73,7 @@ function ContactCard() {
         </div>
       </div>
 
-      {/* Safety Way Forward Section */}
+    
       <div className="w-full">
         <div className="relative w-full h-48 sm:h-64 md:h-96">
           <Image

@@ -22,7 +22,7 @@ function Homepage() {
           <p className="text-center px-4 md:px-10 text-sm md:text-base">
             Rapido, with Bike-Taxis, Autos & Cabs is revolutionising the way
             India travels. With a presence in 150+ cities and over 100 million
-            safe rides completed, Rapido is becoming India's go-to app for
+            safe rides completed, Rapido is becoming India&apos;s go-to app for
             comfortable and affordable rides.
           </p>
           <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
