@@ -1,14 +1,14 @@
 "use client";
 
-import { useSearchParams } from "next/navigation";
-import Post from "@/components/Post";
-
 export default function Page() {
-  const searchParams = useSearchParams();
-  
   return (
     <div>
-      <Post searchParams={searchParams} />
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero
+        doloremque dolor asperiores officia explicabo itaque provident numquam
+        possimus blanditiis incidunt voluptatibus beatae perferendis odio magni,
+        enim, soluta laborum at sed?
+      </p>
     </div>
   );
 }

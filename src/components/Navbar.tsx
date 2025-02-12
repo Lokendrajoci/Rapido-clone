@@ -4,12 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 interface NavItem {
   label: string;
@@ -62,15 +56,12 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${
-        openSans.className
-      } fixed w-full top-0 z-50 transition-all duration-300 
-      ${
+      className={`fixed w-full top-0 z-50 transition-all duration-300 ${
         isMobileMenuOpen
-          ? "bg-white" // Force white background when mobile menu is open
+          ? "bg-white"
           : isScrolled
-          ? "bg-white shadow-md" // Scrolled state
-          : "bg-white/80 backdrop-blur-sm" // Default state
+          ? "bg-white shadow-md"
+          : "bg-white/80 backdrop-blur-sm"
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

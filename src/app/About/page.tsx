@@ -1,17 +1,9 @@
-import Image from "next/image"; 
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans({
-  weight: "400",
-  subsets: ["latin"],
-});
+import Image from "next/image";
 
 export default function Page() {
   return (
     <>
-      <div
-        className={`${openSans.className}container mx-auto px-4 py-8 md:py-12 lg:py-16`}
-      >
+      <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
         <div className="text-center">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
             India&apos;s Beloved Bike Taxi Service
@@ -20,9 +12,9 @@ export default function Page() {
             We are not an option, we are a choice
           </h2>
           <p className="text-base md:text-lg lg:text-xl text-gray-600 max-w-2xl mx-auto mb-8">
-            We&apos;re #1 choice of 10 Million people because we&apos;re the solution of
-            India&apos;s intra-city commuting problems. With assured safety, we also
-            provide economically priced rides.
+            We&apos;re #1 choice of 10 Million people because we&apos;re the
+            solution of India&apos;s intra-city commuting problems. With assured
+            safety, we also provide economically priced rides.
           </p>
         </div>
 

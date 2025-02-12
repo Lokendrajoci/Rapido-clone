@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 import { Open_Sans } from "next/font/google";
 
-const openSans = Open_Sans({
+const sans = Open_Sans({
   weight: "400",
   subsets: ["latin"],
 });
@@ -36,7 +36,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
-        <main className={` ${openSans.className}pt-24 md:pt-28 flex-grow`}>
+        <main className={` ${sans.className} pt-24  flex-grow md:pt-24`}>
           {children}
         </main>
 

@@ -18,19 +18,12 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Open_Sans } from "next/font/google";
-import Image from "next/image";
 
-const openSans = Open_Sans({
-  weight: "400",
-  subsets: ["latin"],
-});
+import Image from "next/image";
 
 export default function ContactFormCard() {
   return (
-    <div
-      className={`flex flex-col lg:flex-row justify-center items-stretch gap-8 p-4 md:p-8 ${openSans.className}`}
-    >
+    <div className="flex flex-col lg:flex-row justify-center items-stretch gap-8 p-4 md:p-8 ">
       <Card className="w-full lg:max-w-[50rem] flex-1 shadow-none border-0">
         <CardHeader>
           <CardTitle className="text-3xl md:text-4xl lg:text-5xl font-bold">

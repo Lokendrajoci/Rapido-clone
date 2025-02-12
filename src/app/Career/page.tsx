@@ -10,19 +10,11 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { Open_Sans } from "next/font/google";
-
-const openSans = Open_Sans({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 function Page() {
   return (
     <>
-      <div
-        className={`${openSans.className}container mx-auto px-4 py-8 md:py-12 lg:py-16 text-center`}
-      >
+      <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
           Be a part of our team.
         </h1>

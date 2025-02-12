@@ -1,37 +1,43 @@
-import React from "react";
-import { Card, CardContent,  } from "@/components/ui/card";
 import Image from "next/image";
+import { Card, CardContent } from "@/components/ui/card";
 
-function ContactCard() {
+interface CardImageProps {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+}
+
+const CardImage = ({ src, alt, width = 500, height = 300 }: CardImageProps) => {
   return (
-    <div className="space-y-8 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    
-      <Card className="w-full shadow-none outline-none">
-        <CardContent className="p-4">
-          <div className="aspect-[16/9] relative w-full">
-            <Image
-              src="/captain-safety.png"
-              alt="Safety Overview"
-              fill
-              className="object-contain"
-              priority
-            />
-          </div>
-        </CardContent>
-      </Card>
+    <Card className="w-full sm:w-[40rem] md:w-[50rem] lg:w-[60rem]  border-0 shadow-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+      <CardContent>
+        <Image
+          src={src}
+          alt={alt}
+          width={width}
+          height={height}
+          className="w-full h-auto"
+        />
+      </CardContent>
+    </Card>
+  );
+};
 
-      <div className="w-full">
-        <div className="aspect-[4/3] relative w-full max-w-4xl mx-auto  h-[80rem]">
-          <Image
-            src="/safety-features-customer.png"
-            alt="Safety Features for Customers"
-            fill
-            className="object-contain"
-          />
-        </div>
-      </div>
+export default function Home() {
+  const images: CardImageProps[] = [
+    { src: "/cover-customer.png", alt: "Captain Verification" },
+    {
+      src: "/safety-features-customer.png",
+      alt: "Safety Features for Customers",
+    },
+  ];
+
+  return (
+    <div className="flex flex-col items-center gap-4 p-4 space-y-8">
+      {images.map((image, index) => (
+        <CardImage key={index} src={image.src} alt={image.alt} />
+      ))}
     </div>
   );
 }
-
-export default ContactCard;
